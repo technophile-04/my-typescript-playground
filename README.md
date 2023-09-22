@@ -1,3 +1,3 @@
-## Solving typescript challenges 🗒️
+## My typescript playground 🗒️
 
-This repository contains my solutions to the typescript challenges from the [typescript-challenges](https:www.typescriptchallenges.com), [total-typescipt](https://github.com/total-typescript) and etc.
+This repository contains my solutions to the typescript challenges like [typescript-challenges](https:www.typescriptchallenges.com), [total-typescipt](https://github.com/total-typescript) and playing around with TS ingeneral.
