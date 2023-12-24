@@ -1,5 +1,20 @@
 import { Equal, Expect } from "../helpers/type-utils";
 
+type StringSplitter<
+  T extends string,
+  D extends string
+> = T extends `${infer FirstPart}${D}${infer RestPart}`
+  ? [FirstPart, ...StringSplitter<RestPart, D>]
+  : [T];
+type StreetSuffixTester<T extends string, K extends string> = StringSplitter<
+  T,
+  " "
+> extends [...any[], infer Last]
+  ? Last extends K
+    ? true
+    : false
+  : false;
+
 type Route =
   | {
       route: "/";
